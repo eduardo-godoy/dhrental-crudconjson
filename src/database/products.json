@@ -1,0 +1,49 @@
+[{
+    "id": 1,
+    "imagen": "product-1673804282445.jpg",
+    "nombre": "Guitarra Gibson",
+    "descripcion": "Guitarra eléctrica marca Gibson con 2 micrófonos, no tiene palanca,  6 cuerdas, 22 trastes, tipo de puente fijo.\r\nNo incluye funda ni cables.",
+    "precio": "350000",
+    "categoria": "guitarras",
+    "oferta": "En-oferta"
+}, {
+    "id": 2,
+    "imagen": "product-1673804425761.jpg",
+    "nombre": "Guitarra EpiPhone",
+    "descripcion": "Guitarra eléctrica marca EpiPhone con 2 micrófonos, no tiene palanca, 6 cuerdas, 22 trastes, tipo de puente fijo. No incluye funda ni cables.",
+    "precio": "380000",
+    "categoria": "guitarras",
+    "oferta": "No"
+}, {
+    "id": 3,
+    "imagen": "product-1673804759679.jpg",
+    "nombre": "Guitarra Epiphone",
+    "descripcion": "Guitarra eléctrica marca Epiphone con 3 micrófonos, tiene palanca, 6 cuerdas, 20 trastes, tipo de puente fijo. No incluye funda ni cables.",
+    "precio": "500000",
+    "categoria": "guitarras",
+    "oferta": "En-oferta"
+}, {
+    "id": 4,
+    "imagen": "product-1673804941543.jpg",
+    "nombre": "Guitarra Cort",
+    "descripcion": "Guitarra Electroacústica Cort, no tiene palanca, 6 cuerdas, 20 trastes, tipo de puente fijo. No incluye funda ni cables.",
+    "precio": "130000",
+    "categoria": "guitarras",
+    "oferta": "En-oferta"
+}, {
+    "id": 5,
+    "imagen": "product-1673810243897.jpg",
+    "nombre": "Guitarra Star ",
+    "descripcion": "Guitarra criolla Star, no tiene palanca, 6 cuerdas, 18 trastes. No incluye funda ni cables.",
+    "precio": "50000",
+    "categoria": "guitarras",
+    "oferta": "En-oferta"
+}, {
+    "id": 6,
+    "imagen": "product-1673810314241.jpg",
+    "nombre": "Guitarra Accord",
+    "descripcion": "Guitarra Electroacústica Accord, no tiene palanca, 6 cuerdas, 18 trastes. No incluye funda ni cables.",
+    "precio": "70000",
+    "categoria": "guitarras",
+    "oferta": "No"
+}]

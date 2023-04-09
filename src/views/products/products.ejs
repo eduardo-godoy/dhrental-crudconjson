@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('../partials/head.ejs')%> 
+
+<body>
+    
+    <%- include('../partials/header.ejs')%> 
+
+   <main> 
+    
+    <section class="section-home">
+        
+    <% products.forEach(product => { %>
+        <a class="tarjeta" href="./productDetail/<%= product.id %>">
+            <article class="articulo-destacado">
+                <img class="imagen-home" src="/images/products/<%= product.imagen %> " alt="">
+                <p class="descripcion"><%= product.nombre %></p>
+                <p class="descripcion">$<%= product.precio %></p>     
+            
+            </article>
+        </a>
+        <% }) %>
+
+        </section>
+    </main>
+    
+
+    <%- include('../partials/footer.ejs') %> 
+
+</body>
+
+</html>

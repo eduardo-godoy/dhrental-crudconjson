@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include('../partials/head.ejs') %> 
+</head>
+<body>
+    <%- include('../partials/header.ejs') %> 
+
+    <main class="main-form">
+
+        <section class="seccion-detalle">
+            <article class="tarjeta-detalle">
+                
+                <img class="imagen-detalle" src="/images/users/<%= user.imagen %>">
+                <div class="div-detalle">
+
+                    <p class="descripcion">Nombre:<%= user.nombre %></p>
+                    <p class="descripcion">Apellido:<%= user.apellido %></p>
+                    <p class="descripcion">Email:<%= user.email %></p>
+                    <p class="descripcion">Domicilio:<%= user.domicilio %></p>
+                    <p class="descripcion">Celular:<%= user.celular %></p>       
+
+
+                    
+                </div>
+            </article>
+            <section class="form-detalle">
+
+               <a class="boton-detalle" href="/users/userEdit/<%= user.id %>">Editar</a>
+               <% if (locals.isLogged && locals.userLogged.rol) { %>
+                <form action="/users/delete/<%= user.id %>?_method=delete" method="post">
+                    <button class="boton-detalle" type="submit"><a>Eliminar</a></button>
+                </form>
+            <% } %> 
+            </section>
+        </section>
+
+    </main>
+
+
+    <%- include('../partials/footer.ejs') %> 
+    
+</body>
+</html>

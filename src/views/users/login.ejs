@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('../partials/head.ejs') %> 
+
+<body>
+
+    <%- include('../partials/header.ejs') %> 
+
+    <main class="main-form">
+
+        <section class="sectionLogin">
+
+            <h1 class="titular-login">Inicia Sesion:</h1>
+
+            <form class="formlogin" action="/users/login" method="POST">
+
+                <label for="email">Email:</label>
+                <input class="input-form" type="email" name="email" placeholder="usuario@gmail.com" id="email" required>
+                <% if (locals.errors && errors.email) { %>
+                    <p class="mensaje-error"><%= errors.email.msg %> </p>
+                   <% } %>
+
+                <label for="contraseña">Contraseña:</label>
+                <input class="input-form"  type="password" name="password" id="contraseña" required>
+                <% if (locals.errors && errors.password) { %>
+                    <p class="mensaje-error"><%= errors.password.msg %> </p>
+                   <% } %>
+                <label class="recuerdame"><input type="checkbox" name="remember" class="recuerdamelogin">Recordarme</label>
+
+                <Button type="submit" class="button">Continuar</Button>
+
+                <a class="texto-enlace" href="#">¿Olvidaste tu Contraseña?</a>
+
+                <a class="texto-enlace" href="register">¡No tenes cuenta todavia?</a>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <%- include('../partials/footer.ejs') %> 
+
+</body>
+
+</html>

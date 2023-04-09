@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include('../partials/head.ejs') %> 
+</head>
+<body>
+    <%- include('../partials/header.ejs') %> 
+
+
+    <main class="main-form">
+
+        <section class="sectionLogin">
+
+            <h1 class="titular-login">Crear cuenta:</h1>
+
+            <form class="formlogin" action="/users/userEdit/<%= user.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+
+                <label for="nombre">Nombre:</label>
+                <input class="input-form" type="text" name="nombre" placeholder="Fulanito" id="nombre" value="<%= user.nombre %>" required>
+               
+                <label for="apellido">Apellido:</label>
+                <input class="input-form" type="text" name="apellido" placeholder="Cosme" id="apellido" value="<%= user.apellido %>" required>
+             
+                <label for="email">Email:</label>
+                <input class="input-form" type="email" name="email" placeholder="usuario@gmail.com" id="email" value="<%= user.email %>" required>
+             
+                <label for="contraseña">Contraseña:</label>
+                <input class="input-form" type="password" name="password" id="contraseña" value="<%= user.password %>" required>
+             
+                <label for="domicilio">Domicilio:</label>
+                <input class="input-form" type="text" name="domicilio" placeholder="Avenida siempre viva 123" id="domicilio" value="<%= user.domicilio %>" required>
+            
+                <label for="celular">Celular:</label>
+                <input class="input-form" type="tel" name="celular" placeholder="1130254059" id="celular" value="<%= user.celular %>" required>
+            
+                <label for="imagen">Avatar:</label>
+                <input class="input-producto" type="file" name="imagen" id="imagen" accept=".jpg, .png" value="<%= user.imagen %>" required>
+             
+                <Button type="submit" class="button">Editar</Button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <%- include('../partials/footer.ejs') %> 
+    
+</body>
+</html>

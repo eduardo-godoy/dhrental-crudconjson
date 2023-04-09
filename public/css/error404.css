@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+
+body {
+    background-color: black;
+    width: auto;
+    height: auto;
+}
+
+img {
+    width: 100%;
+}
+
+
+@media(min-width:480px) {
+
+    img {
+        display: flex;
+        justify-content: center;
+        align-items: self-start;
+    }
+}
+
+@media(min-width:1024px) {
+
+    img {
+        width: auto;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+}

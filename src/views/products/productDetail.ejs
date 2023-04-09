@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('../partials/head.ejs')%> 
+
+<body>
+
+   <%- include('../partials/header.ejs') %> 
+    
+    <main class="main-form">
+
+        <section class="seccion-detalle">
+            <article class="tarjeta-detalle">
+                
+                <img class="imagen-detalle" src="/images/products/<%= product.imagen %>">
+                <div class="div-detalle">
+                    <h2 class="titular-detalle"><%= product.nombre %></h2>
+                    <p class="detalle">Detalle: <%= product.descripcion %></p>
+                    <p class="detalle">Precio: $<%= product.precio %></p>
+
+                    <a href="/products/productCart">
+                        <button class="boton-detalle" type="submit">Comprar</button>
+                    </a>    
+                    
+                </div>
+            </article> 
+            <% if (locals.isLogged && locals.userLogged.rol) { %>
+            <section class="form-detalle">
+               
+               <a class="boton-detalle" href="/products/productEdit/<%= product.id %>">Editar</a>
+               
+                <form action="/products/delete/<%= product.id %>?_method=delete" method="post">
+                    <button class="boton-detalle" type="submit">Eliminar</button>
+                </form>
+
+            </section>
+            <% } %> 
+        </section>
+
+    </main>
+
+    <%- include('../partials/footer.ejs') %> 
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+<body>
+
+   <%- include('./partials/header')%>
+
+    <main>
+
+        <h1 class="titulares-home">Ofertas semanales</h1>
+
+        <section class="section-home">
+            
+<% inSale.forEach(product => { %>
+ 
+
+            <a class="tarjeta" href="/products/productDetail/<%= product.id %> ">
+                <article class="articulo-destacado">
+                    <img class="imagen-home" src="/images/products/<%= product.imagen %>" alt="">
+                    <p class="descripcion"><%= product.nombre %></p>
+                    <p class="descripcion">$<%= product.precio %></p>
+                </article>
+            </a>
+            
+            <% }) %>
+
+
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+
+</body>
+
+</html>

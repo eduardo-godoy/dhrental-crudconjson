@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %> 
+
+<body>
+
+    <%- include('./partials/header.ejs') %> 
+
+    <main class="main-form">
+
+        <h1 class="titular-contacto">Contacto</h1>
+        
+        <h2 class="subtitulo-contacto">Dejanos tu mensaje</h2>
+
+        <form class="form-contacto" action="#" method="post">
+
+            <input class="input-contacto" type="text" name="nombre-usuario-contacto" placeholder="Tu nombre" required>
+
+            <input class="input-contacto" type="email" name="email-usuario-contacto" placeholder="Tu email" required>
+
+            <textarea class="textarea-comentario" name="comentario-contacto" cols="30" rows="10"
+                placeholder="Dejanos tu comentario" required></textarea>
+
+            <button class="button" type="submit">Enviar</button>
+
+        </form>
+
+        <p class="parrafo-contacto">O contactanos clickeando en el pie de pagina en cualquiera de nuestras redes
+            sociales</p>
+
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+
+</body>
+
+</html>

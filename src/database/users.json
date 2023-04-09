@@ -1,0 +1,38 @@
+[{
+    "id": 1,
+    "imagen": "user-1672609386318.jpg",
+    "nombre": "Eduardo Josue",
+    "apellido": "Godoy",
+    "email": "edudesm38@gmail.com",
+    "password": "$2a$10$tiEbl9SZvPLm9Ue.aC0LQ.JA0X3kgPk1cJCdZ0gWxvSeHPMfbSE9C",
+    "domicilio": "Avenida congreso 2562",
+    "celular": "1164692686",
+    "rol": "admin"
+}, {
+    "id": 2,
+    "nombre": "Lucas Jesus",
+    "apellido": "Miola",
+    "email": "miola_lucas@hotmail.com",
+    "password": "$2a$10$SWRCGBHop.NKIW6Sh0cBi.ynoKONAbAbtIowbzByV5KxvIUjjhVR6",
+    "domicilio": "Diaz Colodrero 2532",
+    "celular": "1165895688",
+    "imagen": "user-1672963156357.jpg"
+}, {
+    "id": 3,
+    "nombre": "Pablo Damian ",
+    "apellido": "Paniagua",
+    "email": "paniaguacero@gmail.com",
+    "password": "$2a$10$Jjtr505KhvID.OiXm/P5D.1eC4DjbucJqqyC6pBrA6TuWMBKHkeA2",
+    "domicilio": "Heredia 6749",
+    "celular": "1157302784",
+    "imagen": "user-1673805540267.png"
+}, {
+    "id": 4,
+    "nombre": "Maximiliano Leandro",
+    "apellido": "Caffa",
+    "email": "maxi_caffa@hotmail.com",
+    "password": "$2a$10$RmhJsR4487Nuw6Sa9EaRG.j/9zmkawFb1W/INWVbtIQJahi1gmcHq",
+    "domicilio": "San Carlos 379",
+    "celular": "1169826539",
+    "imagen": "user-1673805596585.png"
+}]
